@@ -82,6 +82,7 @@ class ClassicThemePlugin extends ThemePlugin
 
         // Importing Bootstrap's and tag-it CSS
         $this->addStyle('app_css', 'resources/app.min.css');
+        $this->addStyle('animate_css', 'libs/animate/animate.css');
         $this->addStyle('acsar_css', 'css/main.min.css');
 
         // Styles for HTML galleys
@@ -93,6 +94,9 @@ class ClassicThemePlugin extends ThemePlugin
 
         // Importing JQuery, Popper, Bootstrap, JQuery-ui, tag-it (own instance), and custom theme's javascript
         $this->addScript('app_js', 'resources/app.min.js');
+        $this->addScript('app_jquery', 'libs/jquery/jquery-1.11.2.min.js');
+        $this->addScript('app_waypoint', 'libs/waypoints/waypoints.min.js');
+        $this->addScript('app_common', 'js/common.js');
 
         // Load icon font Ionicons
         $this->addScript(

@@ -25,7 +25,7 @@ html.js .loader .loader_inner {
 }
 
 body {
-  font-family: "RobotoRegular", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 16px;
   min-width: 320px;
@@ -129,6 +129,7 @@ a:hover {
 }
 .nav-wrap ul li:hover > a {
   color: #0494FC;
+  font-weight: 500;
 }
 .nav-wrap ul li:hover ul {
   display: block;
@@ -347,9 +348,13 @@ a:hover {
   border-radius: 5px;
   padding: 25px;
   transition: all 0.25s ease-in-out;
+  opacity: 0;
 }
 .articles .article-block:hover {
   box-shadow: 5px 5px 15px #ddd;
+}
+.articles .article-block.block-right {
+  animation-delay: 0.15s;
 }
 .articles .article-block .title-article {
   font-size: 24px;

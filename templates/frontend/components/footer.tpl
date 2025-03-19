@@ -31,7 +31,7 @@
 	</div>
 </footer> *}
 
-	<div id="footer" class="footer">
+<div id="footer" class="footer">
 		<div class="container">
 			<div class="row top">
 				<div class="col-md-4">
@@ -39,10 +39,11 @@
 						<ul>
 							<li><a href="#">About</a>
 								<ul>
-									<li><a href="#">History of the Journal</a></li>
-									<li><a href="#">History of the Journal</a></li>
-									<li><a href="#">History of the Journal</a></li>
-									<li><a href="#">History of the Journal</a></li>
+									<li><a href="#">History of the Journal</a>
+									<li><a href="#">Journal Publisher</a>
+									<li><a href="#">International Editorial Board</a>
+									<li><a href="#">Editorial Correspondence</a>
+									<li><a href="#">Contacts</a>
 								</ul>
 							</li>
 							<li><a href="#">Current</a></li>
@@ -63,10 +64,16 @@
 						<ul>
 							<li><a href="#">Journal Policy</a>
 								<ul>
-									<li><a href="#">History of the Journal</a></li>
-									<li><a href="#">History of the Journal</a></li>
-									<li><a href="#">History of the Journal</a></li>
-									<li><a href="#">History of the Journal</a></li>
+									<li><a href="#">Aims and scope</a>
+									<li><a href="#">Review process</a>
+									<li><a href="#">Publication Frequency</a>
+									<li><a href="#">Indexing and DOI</a>
+									<li><a href="#">Open access</a>
+									<li><a href="#">Publication Ethics</a>
+									<li><a href="#">Retraction Policy</a>
+									<li><a href="#">Author Policy</a>
+									<li><a href="#">Plagiarism</a>
+									<li><a href="#">Rejection of Publication: Reasons</a>
 								</ul>
 							</li>
 						</ul>
@@ -77,10 +84,16 @@
 						<ul>
 							<li><a href="#">Reviewers</a>
 								<ul>
-									<li><a href="#">History of the Journal</a></li>
-									<li><a href="#">History of the Journal</a></li>
-									<li><a href="#">History of the Journal</a></li>
-									<li><a href="#">History of the Journal</a></li>
+									<li><a href="#">Editorial Review Board 2025</a></li>
+								</ul>
+							</li>
+							<li><a href="#">GDPR (General Data Protection Regulation)</a></li>
+							<li><a href="#">Announcements</a>
+								<ul>
+									<li><a href="#">Information</a>
+									<li><a href="#">Resources for Authors</a>
+									<li><a href="#">Navigation and Data Management</a>
+									<li><a href="#">Support and Training</a>
 								</ul>
 							</li>
 						</ul>
@@ -100,11 +113,11 @@
 					<div class="block">
 						<p>Anti-corruption studies and research, ISSN 0000-1111
 							International Semiannual Publication of Scholarly Papers</p>
-						<p>Founded and published by
-							Law Enforcement Academy of the Republic of Uzbekistan
+						<p>Founded and published by <br>
+							<a href="#">Law Enforcement Academy of the Republic of Uzbekistan</a>
 							9, Rixsiliy street, Tashkent, Uzbekistan 100190</p>
-						<p>Email: editor@acsar.uz
-							Home page: https://acsar.uz</p>
+						<p>Email: <a href="#">editor@acsar.uz</a> <br>
+							Home page: <a href="#">https://acsar.uz</a></p>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -116,10 +129,10 @@
 						</div>
 						<div class="partners-wrap">
 							<div class="block">
-								<a href="#"><img src="{$baseUrl}/plugins/themes/classic/img/turnitin-logo.png" alt="Turnitin"></a>
+								<a href="https://www.turnitin.com/" target="_block"><img src="{$baseUrl}/plugins/themes/classic/img/turnitin-logo.png" alt="Turnitin"></a>
 							</div>
 							<div class="block">
-								<a href="#"><img src="{$baseUrl}/plugins/themes/classic/img/cc-logo.png" alt="CC"></a>
+								<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_block"><img src="{$baseUrl}/plugins/themes/classic/img/cc-logo.png" alt="CC"></a>
 							</div>
 						</div>
 					</div>
