@@ -727,6 +727,19 @@ a:hover {
   border: none;
 }
 
+.register-wrap .form-group {
+  margin-bottom: 15px;
+}
+.register-wrap .identity {
+  margin-bottom: 10px;
+}
+.register-wrap .consent, .register-wrap .reviewer {
+  margin-bottom: 10px;
+}
+.register-wrap .buttons {
+  margin-top: 45px;
+}
+
 @media screen and (max-width: 1200px) {
   #main .desc-block {
     position: relative;

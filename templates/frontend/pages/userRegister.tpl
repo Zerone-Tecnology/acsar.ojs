@@ -13,7 +13,9 @@
 {include file="frontend/components/header.tpl" pageTitle="user.register"}
 
 <main class="page page_register">
-	<div class="container-fluid container-page container-narrow">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 offset-md-2 page-wrap register-wrap">
 
 		{include file="frontend/components/headings.tpl" currentTitleKey="user.register"}
 
@@ -156,6 +158,8 @@
 				<a href="{url page="login" source=$rolesProfileUrl}" class="login btn register-button">{translate key="user.login"}</a>
 			</div>
 		</form>
+			</div>
+		</div>
 	</div>
 </main><!-- .page -->
 
