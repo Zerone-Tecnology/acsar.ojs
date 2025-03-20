@@ -107,7 +107,7 @@ class ClassicThemePlugin extends ThemePlugin
         );
 
         // Adding navigation menu as in OJS 3.1+ we can have custom
-        $this->addMenuArea(array('primary', 'user'));
+        $this->addMenuArea(array('primary', 'user', 'footer1', 'footer2', 'footer3'));
 
         HookRegistry::register('TemplateManager::display', array($this, 'loadAdditionalData'));
         // Get additional issue data to the issue page

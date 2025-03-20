@@ -214,6 +214,15 @@ a:hover {
   z-index: 5;
   position: relative;
 }
+.nav-wrap ul ul li a {
+  padding: 10px;
+}
+.nav-wrap ul ul .l-title {
+  color: #fff;
+  z-index: 10;
+  padding-left: 10px;
+  position: relative;
+}
 
 .search-wrap {
   background-color: #FBFBFB;
@@ -246,6 +255,8 @@ a:hover {
   color: #004156;
   line-height: 1.2em;
   text-transform: uppercase;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 #main .title.t2 {
   padding-left: 15%;
@@ -415,12 +426,10 @@ a:hover {
   font-size: 32px;
   margin: 55px 0 25px;
 }
-.page ul {
-  list-style-type: none;
+.page .list-block {
   padding: 0;
   margin: 0;
-}
-.page .list-block {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -452,6 +461,7 @@ a:hover {
 }
 .page .list-block li .b-title {
   margin: auto;
+  font-size: 24px;
 }
 .page .ul-list {
   font-family: "Libre Bodoni", serif;

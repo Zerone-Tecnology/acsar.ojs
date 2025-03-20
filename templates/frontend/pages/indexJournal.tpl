@@ -31,18 +31,40 @@
 						<div class="txt title t2">Studies and</div>
 						<div class="txt title t3">Research</div>
 						<div class="desc-block">
-							<div class="txt desc">(ACSAR) is a peer-reviewed scientific journal dedicated to enhancing cross-disciplinarity investigations on the capabilities of digitalization and sustainability for development management at regional, and national level</div>
-							<a href="#" class="btn btn-full">Read more</a>
+							{* Additional Homepage Content *}
+							{if $additionalHomeContent}
+								<div class="txt desc">
+									{$additionalHomeContent}
+								</div>
+							{/if}
 						</div>
 					</div>
 
 				</div>
 				<div class="col-12 col-md-4">
 					<div class="cover-block-wrap">
-						<div class="txt current">Current Issue</div>
-						<div class="cover-img"><img src="{$baseUrl}/plugins/themes/classic/img/cover.jpg" alt="Curren Issue"></div>
-						<div class="txt vol">Vol.1 №1 (2025)</div>
-						<div class="txt pub-date"><b>Published:</b> 2025-03-28</div>
+						{* Latest issue *}
+						{if $issue}
+							<div class="txt current">{translate key="journal.currentIssue"}</div>
+							{* Issue cover image *}
+							{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
+							{if $issueCover}
+								<div class="cover-img">
+									<a href="{url op="view" page="issue" path=$issue->getBestIssueId()}">
+										<img src="{$issueCover|escape}" {if $issue->getLocalizedCoverImageAltText() != ''}alt="{$issue->getLocalizedCoverImageAltText()|escape}"{else}alt=""{/if}></a></div>
+							{/if}
+
+							{strip}
+							{if $issueIdentificationString}
+								<div class="txt vol">{$issueIdentificationString|escape}</div>
+							{/if}
+							{/strip}
+							{* Published date *}
+							{if $issue->getDatePublished()}
+								<div class="txt pub-date"><b>{translate key="submissions.published"}:</b> {$issue->getDatePublished()|date_format:$dateFormatLong}</div>
+							{/if}
+						{/if}
+
 					</div>
 				</div>
 			</div>
@@ -59,22 +81,35 @@
 				</div>
 				<div class="col-md-3">
 					<div class="block">
-						<a href="#" class="btn btn-all-issues">View All Issues</a>
+						<a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}" class="btn btn-all-issues">{translate key="journal.viewAllIssues"}</a>
 					</div>
 				</div>
 			</div>
+			{* {include file="frontend/objects/issue_toc.tpl"} *}
 			<div class="row">
+				{* {foreach name=sections from=$publishedSubmissions item=section} *}
+					{foreach from=$section.articles item=article}
+
+						<div class="col-md-6">
+							<div class="article-block">
+								<div class="txt num">7-24</div>
+								<a href="" class="title-article">
+									{$publication->getLocalizedFullTitle(null, 'html')|strip_unsafe_html}</a>
+								{if $showAuthor || $submissionPages || ($submissionDatePublished && $showDatePublished)}
+									{if $showAuthor}
+										<div class="txt authors">{$publication->getAuthorString($authorUserGroups)|escape}</div>
+									{/if}
+								{/if}
+								<a href="#" class="btn btn-pdf">PDF</a>
+							</div>
+						</div>
+
+					{/foreach}
+				{* {/foreach} *}
+
 				<div class="col-md-6">
 					<div class="article-block">
-						<div class="txt num">7-24</div>
-						<div class="title-article">The Role of the Pareto Principle in Quality Management within Industry 4.0: A Comprehensive Bibliometric Analysis</div>
-						<div class="txt authors">Aleksy Kwilinski, Maciej Kardas</div>
-						<a href="#" class="btn btn-pdf">PDF</a>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="article-block">
-						<div class="txt num">7-24</div>
+						<div class="txt num">24-35</div>
 						<div class="title-article">The Role of the Pareto Principle in Quality Management within Industry 4.0: A Comprehensive Bibliometric Analysis</div>
 						<div class="txt authors">Aleksy Kwilinski, Maciej Kardas</div>
 						<a href="#" class="btn btn-pdf">PDF</a>
@@ -127,41 +162,6 @@
 
 		{call_hook name="Templates::Index::journal"}
 
-		{* Latest issue *}
-		{if $issue}
-			<section class="current_issue">
-				<header>
-					{strip}
-						<h2 class="current_issue_title">
-							<span class="current_issue_label">{translate key="journal.currentIssue"}</span>
-							{if $issueIdentificationString}
-						 		<span class="current_issue_identification">{$issueIdentificationString|escape}</span>
-							{/if}
-						</h2>
-					{/strip}
-
-					{* Published date *}
-					{if $issue->getDatePublished()}
-						<p class="published">
-							<span class="date_label">
-								{translate key="submissions.published"}
-							</span>
-							<span class="date_format">
-									{$issue->getDatePublished()|date_format:$dateFormatLong}
-							</span>
-						</p>
-					{/if}
-				</header>
-				{include file="frontend/objects/issue_toc.tpl"}
-			</section>
-		{/if}
-
-		{* Additional Homepage Content *}
-		{if $additionalHomeContent}
-			<section class="additional_content">
-				{$additionalHomeContent}
-			</section>
-		{/if}
 	</div>
 </main><!-- .page -->
 
