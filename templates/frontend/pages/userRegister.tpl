@@ -15,7 +15,7 @@
 <main class="page page_register">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 offset-md-2 page-wrap register-wrap">
+			<div class="col-md-6 offset-md-3 page-wrap register-wrap">
 
 		{include file="frontend/components/headings.tpl" currentTitleKey="user.register"}
 

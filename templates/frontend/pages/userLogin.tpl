@@ -14,7 +14,7 @@
 <div class="page page_login">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 offset-md-2 page-wrap login-wrap">
+			<div class="col-md-6 offset-md-3 page-wrap login-wrap">
 
 				{include file="frontend/components/headings.tpl" currentTitleKey="user.login"}
 

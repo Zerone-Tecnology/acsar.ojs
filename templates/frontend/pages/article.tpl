@@ -23,7 +23,7 @@
 <main class="page page_article ">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 offset-md-2 page-wrap issue-wrap">
+			<div class="col-md-6 offset-md-3 page-wrap issue-wrap">
 
 		{* Show article overview *}
 		{include file="frontend/objects/article_details.tpl"}

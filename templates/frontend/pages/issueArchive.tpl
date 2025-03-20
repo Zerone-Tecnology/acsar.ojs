@@ -27,7 +27,7 @@
 <main class="page page_issue_archive" id="main">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 offset-md-2 page-wrap issues-wrap">
+			<div class="col-md-6 offset-md-3 page-wrap issues-wrap">
 
 		{include file="frontend/components/headings.tpl" currentTitle=$pageTitle}
 

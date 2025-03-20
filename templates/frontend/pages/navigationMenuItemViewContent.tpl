@@ -12,7 +12,7 @@
 <main id="main" class="page navigation-item-content">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 offset-md-2 page-wrap">
+			<div class="col-md-6 offset-md-3 page-wrap">
 				<div class="container-fluid container-page container-narrow">
 					<div class="title">{$title|escape}</div>
 					{$content}
