@@ -20,14 +20,18 @@
 
 {include file="frontend/components/header.tpl" pageTitleTranslated=$publication->getLocalizedTitle()|escape}
 
-<main class="page page_article">
-	<div class="container-fluid container-page">
+<main class="page page_article ">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 offset-md-2 page-wrap issue-wrap">
 
 		{* Show article overview *}
 		{include file="frontend/objects/article_details.tpl"}
 
 		<div class="footer-hook-block">
 			{call_hook name="Templates::Article::Footer::PageFooter"}
+		</div>
+			</div>
 		</div>
 	</div>
 

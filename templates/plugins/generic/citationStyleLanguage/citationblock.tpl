@@ -1,7 +1,7 @@
 {if $citation}
 	<div class="item citation">
 		<div class="sub_item citation_display">
-			<h3>
+			<h3 class="t-title">
                 {translate key="submission.howToCite"}
 			</h3>
 			<div class="citation_format_value">
@@ -9,7 +9,7 @@
                     {$citation}
 				</div>
 				<div class="citation_formats dropdown">
-					<button class="btn btn-primary" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+					<button class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
 					        aria-expanded="false">
                         {translate key="submission.howToCite.citationFormats"}
 					</button>

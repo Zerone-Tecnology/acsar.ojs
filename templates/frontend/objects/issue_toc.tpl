@@ -53,32 +53,35 @@
 
 		{* Issue cover image *}
 		{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
-		{if $issueCover}
-			<div class="issue_cover_block{if !$issue->hasDescription()} align-left{/if}">
-				<a href="{url op="view" page="issue" path=$issue->getBestIssueId()}">
-					<img class="cover_image"
-					     src="{$issueCover|escape}" {if $issue->getLocalizedCoverImageAltText() != ''}alt="{$issue->getLocalizedCoverImageAltText()|escape}"{else}alt=""{/if}>
-				</a>
-			</div>
-		{/if}
+		<div class="issue-top-wrap">
+			{if $issueCover}
+				<div class="img-wrap issue_cover_block{if !$issue->hasDescription()} align-left{/if}">
+					<a href="{url op="view" page="issue" path=$issue->getBestIssueId()}">
+						<img class="cover_image"
+						     src="{$issueCover|escape}" {if $issue->getLocalizedCoverImageAltText() != ''}alt="{$issue->getLocalizedCoverImageAltText()|escape}"{else}alt=""{/if}>
+					</a>
+				</div>
+			{/if}
+			{* Full-issue galleys *}
+			{if $issueGalleys}
+				<section class="galleys">
+					<h4 class="visually-hidden b-title">
+						{translate key="issue.tableOfContents"}
+					</h4>
+					<ul class="galleys_links">
+						{foreach from=$issueGalleys item=galley}
+							<li>
+								{include file="frontend/objects/galley_link.tpl" parent=$issue purchaseFee=$currentJournal->getSetting('purchaseIssueFee') purchaseCurrency=$currentJournal->getSetting('currency')}
+							</li>
+						{/foreach}
+					</ul>
+				</section>
+			{/if}
+		</div>
 	</section>
 {/if}
 
-{* Full-issue galleys *}
-{if $issueGalleys}
-	<section class="galleys">
-		<h4 class="visually-hidden">
-			{translate key="issue.tableOfContents"}
-		</h4>
-		<ul class="galleys_links">
-			{foreach from=$issueGalleys item=galley}
-				<li>
-					{include file="frontend/objects/galley_link.tpl" parent=$issue purchaseFee=$currentJournal->getSetting('purchaseIssueFee') purchaseCurrency=$currentJournal->getSetting('currency')}
-				</li>
-			{/foreach}
-		</ul>
-	</section>
-{/if}
+
 
 {* Articles *}
 <section class="sections">

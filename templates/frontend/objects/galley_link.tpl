@@ -27,7 +27,7 @@
 
 {* Determine galley type and URL op *}
 {if $galley->isPdfGalley()}
-	{assign var="type" value="pdf"}
+	{assign var="type" value="btn-pdf pdf"}
 {else}
 	{assign var="type" value="file"}
 {/if}

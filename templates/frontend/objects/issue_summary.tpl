@@ -19,19 +19,21 @@
 <div class="obj_issue_summary">
 
 	{if $issueCover}
-		<a class="cover" href="{url op="view" path=$issue->getBestIssueId()}">
-			<img class="archive_issue_cover" src="{$issueCover|escape}" alt="{$issue->getLocalizedCoverImageAltText()|escape|default:''}">
-		</a>
+		<div class="img-wrap">
+			<a class="cover" href="{url op="view" path=$issue->getBestIssueId()}">
+				<img class="archive_issue_cover" src="{$issueCover|escape}" alt="{$issue->getLocalizedCoverImageAltText()|escape|default:''}">
+			</a>
+		</div>
 	{/if}
 
 	{if $issue->getShowVolume() || $issue->getShowNumber() || $issue->getShowYear()}
-		<a class="issue_summary_title" href="{url op="view" path=$issue->getBestIssueId()}">
+		<a class="issue_summary_title name" href="{url op="view" path=$issue->getBestIssueId()}">
 			{strip}
 				{if $issue->getVolume() && $issue->getShowVolume()}
-					<span class="current-issue-volume">{translate key="plugins.themes.classic.volume-abbr"} {$issue->getVolume()|escape}</span>
+					<span class="current-issue-volume">{translate key="plugins.themes.classic.volume-abbr"} {$issue->getVolume()|escape} </span>
 				{/if}
 				{if $issue->getNumber() && $issue->getShowNumber()}
-					<span class="current-issue-number">{translate key="plugins.themes.classic.number-abbr"} {$issue->getNumber()|escape}</span>
+					<span class="current-issue-number">{translate key="plugins.themes.classic.number-abbr"} {$issue->getNumber()|escape} </span>
 				{/if}
 				{if $issue->getYear() && $issue->getShowYear()}
 					<span class="current-issue-year">{$issue->getYear()|escape}</span>
@@ -45,7 +47,7 @@
 		</a>
 	{/if}
 
-	<div class="issue_summary_date">
+	<div class="issue_summary_date date">
 		{$issue->getDatePublished()|date_format:$dateFormatLong}
 	</div>
 </div><!-- .obj_issue_summary -->

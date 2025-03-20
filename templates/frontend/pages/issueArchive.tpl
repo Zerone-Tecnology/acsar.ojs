@@ -24,8 +24,10 @@
 {/capture}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$pageTitle}
 
-<main class="page page_issue_archive">
-	<div class="container-fluid container-page">
+<main class="page page_issue_archive" id="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 offset-md-2 page-wrap issues-wrap">
 
 		{include file="frontend/components/headings.tpl" currentTitle=$pageTitle}
 
@@ -37,13 +39,15 @@
 
 		{* List issues *}
 		{else}
-			<div class="flex_container issues_list">
-				{foreach from=$issues item=issue}
-					<div class="issue_item">
-						{include file="frontend/objects/issue_summary.tpl"}
-					</div>
-				{/foreach}
-			</div>
+			<div class="flex_container issues_list page-content">
+				<div class="block-wrap">
+					{foreach from=$issues item=issue}
+						<div class="issue_item block">
+							{include file="frontend/objects/issue_summary.tpl"}
+						</div>
+					{/foreach}
+				</div>
+				</div>
 
 			{* Pagination *}
 			{capture assign="prevUrl"}
@@ -67,7 +71,10 @@
 				total=$total
 			}
 		{/if}
-	</div> <!-- end of a container -->
+
+			</div>
+		</div>
+	</div>
 </main>
 
 

@@ -1,19 +1,12 @@
 jQuery(document).ready(function($){
 
-	$('.main').waypoint(function(){
-		$('.articles .article-block').addClass('animated fadeInUp')
+	// $('.main').waypoint(function(){
+	// 	$('.articles .article-block').addClass('animated fadeInUp')
+	// });
+
+	$('.mobile-menu').click(function(){
+		$(this).find('#nav-icon').toggleClass('open');
+		$('.nav-wrap').toggleClass('open')
 	});
-
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
-
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 	
 });

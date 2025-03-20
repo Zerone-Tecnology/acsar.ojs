@@ -47,13 +47,13 @@
 	<div id="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-6 col-md-6">
 					<div class="logo-wrap">
 						<a href="{$homeUrl}"><img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle|escape}"></a>
 						<div class="logo-text">Anti-Corruption Studies and Research</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-6 col-md-6">
 					<div class="auth-wrap">
 						{* <a href="#" class="btn btn-reg">Register</a>
 						<a href="#" class="btn btn-login">Login</a> *}
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-9">
+				<div class="col-12 col-lg-9">
 					<div class="nav-wrap">
 						{capture assign="primaryMenu"}
 							{load_menu name="primary" id="navigationPrimary" ulClass="pkp_navigation_primary"}
@@ -73,9 +73,20 @@
 						{$primaryMenu}
 					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="search-wrap">
-						<input type="text" placeholder="Search">
+				<div class="col-12 col-lg-3">
+					<div class="header-line-wrap">
+						<div class="mobile-menu">
+							<div id="nav-icon">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<span>MENU</span>
+						</div>
+						<div class="search-wrap">
+							<input type="text" placeholder="Search">
+						</div>
 					</div>
 				</div>
 			</div>

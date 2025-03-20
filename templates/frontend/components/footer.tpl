@@ -34,7 +34,7 @@
 <div id="footer" class="footer">
 		<div class="container">
 			<div class="row top">
-				<div class="col-md-4">
+				<div class="col-6 col-md-6 col-lg-4">
 					<div class="block menu-wrap">
 						<ul>
 							<li><a href="#">About</a>
@@ -59,7 +59,7 @@
 						
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-6 col-md-6 col-lg-4">
 					<div class="block menu-wrap">
 						<ul>
 							<li><a href="#">Journal Policy</a>
@@ -79,7 +79,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-12 col-md-12 col-lg-4">
 					<div class="block menu-wrap">
 						<ul>
 							<li><a href="#">Reviewers</a>
@@ -101,7 +101,7 @@
 				</div>
 			</div>
 			<div class="row center">
-				<div class="col-md-4">
+				<div class="col-12 col-md-6 col-lg-4">
 					<div class="block">
 						<div class="logo-wrap">
 							<img src="{$baseUrl}/plugins/themes/classic/img/acsar-logo.png" alt="ACSAR">
@@ -109,7 +109,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-12 col-md-6 col-lg-4">
 					<div class="block">
 						<p>Anti-corruption studies and research, ISSN 0000-1111
 							International Semiannual Publication of Scholarly Papers</p>
@@ -120,7 +120,7 @@
 							Home page: <a href="#">https://acsar.uz</a></p>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-12 col-md-12 col-lg-4">
 					<div class="block">
 						<div class="search-wrap">
 							<input type="text" placeholder="Search">

@@ -13,7 +13,7 @@
 
 <header>
 	<div class="current_page_title">
-		<h1 class="{if $requestedPage|escape === 'issue' && $requestedOp|escape === "view"}text-left issue-header{else}text-center{/if}">
+		<h1 class="{if $requestedPage|escape === 'issue' && $requestedOp|escape === "view"}text-left issue-header b-title{else}text-left title{/if}">
 			{if $currentTitleKey}
 				{translate key=$currentTitleKey}
 			{else}

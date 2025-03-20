@@ -19,7 +19,9 @@
 {include file="frontend/components/header.tpl" pageTitleTranslated=$issueIdentification|escape}
 
 <main class="page page_issue">
-	<div class="container-fluid container-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 offset-md-2 page-wrap issue-wrap">
 
 		{* Display a message if no current issue exists *}
 		{if !$issue}
@@ -31,6 +33,8 @@
 			{include file="frontend/components/headings.tpl" currentTitle=$issueIdentificationString}
 			{include file="frontend/objects/issue_toc.tpl"}
 		{/if}
+			</div>
+		</div>
 	</div>
 </main>
 

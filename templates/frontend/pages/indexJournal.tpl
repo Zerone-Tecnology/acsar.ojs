@@ -24,7 +24,7 @@
 	<div id="main" class="main">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-9">
+				<div class="col-12 col-md-8">
 					<div class="main-content">
 						<div class="txt issn">(ISSN 0000-1111)</div>
 						<div class="txt title t1">Anti-Corruption</div>
@@ -37,7 +37,7 @@
 					</div>
 
 				</div>
-				<div class="col-md-3">
+				<div class="col-12 col-md-4">
 					<div class="cover-block-wrap">
 						<div class="txt current">Current Issue</div>
 						<div class="cover-img"><img src="{$baseUrl}/plugins/themes/classic/img/cover.jpg" alt="Curren Issue"></div>
