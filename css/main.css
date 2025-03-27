@@ -76,6 +76,9 @@ a:hover {
   margin-right: 15px;
   width: 120px;
 }
+#header .logo-wrap img:focus-visible {
+  outline: none;
+}
 #header .logo-wrap .logo-text {
   font-size: 24px;
   line-height: 26px;
@@ -275,8 +278,12 @@ a:hover {
 }
 #main .cover-block-wrap {
   background-color: #fff;
-  padding: 25px;
+  padding: 15%;
   border-radius: 5px;
+}
+#main .cover-block-wrap .cover-img {
+  max-height: 300px;
+  overflow: hidden;
 }
 #main .cover-block-wrap .cover-img img {
   width: 100%;
@@ -290,7 +297,7 @@ a:hover {
   margin-bottom: 15px;
 }
 #main .cover-block-wrap .vol {
-  font-size: 24px;
+  font-size: 16px;
   margin-top: 15px;
   margin-bottom: 5px;
 }
@@ -366,7 +373,7 @@ a:hover {
 }
 
 .articles {
-  margin: 55px 0;
+  margin: 0 0 55px;
 }
 .articles .title {
   font-family: "Libre Bodoni", serif;
