@@ -56,7 +56,7 @@
 				{/if}
 				{if !empty($navigationMenuItemAssignment->children)}
 					{assign var=navItemType value=$navigationMenuItemAssignment->navigationMenuItem->getType()|escape}
-					<li class="{$liClass|escape} has-child">
+					<li class="{$liClass|escape} btn has-child">
 						<a{if $navItemType === "NMI_TYPE_USER_DASHBOARD"} id="user-dashboard-link"{/if}
 								href="{$navigationMenuItemAssignment->navigationMenuItem->getUrl()}">
 							{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}

@@ -83,6 +83,7 @@ class ClassicThemePlugin extends ThemePlugin
         // Importing Bootstrap's and tag-it CSS
         $this->addStyle('app_css', 'resources/app.min.css');
         // $this->addStyle('bootstrap_css', 'libs/bootstrap/css/bootstrap-grid.min.css');
+        $this->addStyle('fonts_css', 'css/fonts.css');
         $this->addStyle('animate_css', 'libs/animate/animate.css');
         $this->addStyle('acsar_css', 'css/main.min.css');
 
