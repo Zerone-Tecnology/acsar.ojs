@@ -75,7 +75,7 @@
 						</div>
 						<div class="partners-wrap">
 							<div class="block">
-								<a href="https://www.turnitin.com/" target="_block"><img src="{$baseUrl}/plugins/themes/classic/img/turnitin-logo.png" alt="Turnitin"></a>
+								<a href="https://www.strikeplagiarism.com/en/" target="_block"><img src="{$baseUrl}/plugins/themes/classic/img/strikeplagiarism-logo.png" alt="strikeplagiarism"></a>
 							</div>
 							<div class="block">
 								<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_block"><img src="{$baseUrl}/plugins/themes/classic/img/cc-logo.png" alt="CC"></a>

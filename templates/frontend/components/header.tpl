@@ -60,7 +60,7 @@
 						<div class="user-nav-wrap">
 							{load_menu name="user" id="navigationUser" ulClass="pkp_navigation_user"}
 						</div>
-						{* {include file="frontend/components/languageSwitcher.tpl" id="languageNav"} *}
+						{include file="frontend/components/languageSwitcher.tpl" id="languageNav"}
 					</div>
 				</div>
 			</div>
