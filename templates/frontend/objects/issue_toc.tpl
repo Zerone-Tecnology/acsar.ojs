@@ -18,14 +18,14 @@
  *}
 
 {* Indicate if this is only a preview *}
-{if !$issue->getPublished()}
+{* {if !$issue->getPublished()}
 	{include file="frontend/components/notification.tpl" type="warning" messageKey="editor.issues.preview"}
-{/if}
+{/if} *}
 
 {* Issue introduction area above articles *}
-{if $issue->hasDescription() || $issue->getLocalizedCoverImageUrl()}
+{* {if $issue->hasDescription() || $issue->getLocalizedCoverImageUrl()} *}
 	{* Description *}
-	<section class="flex_container description_cover">
+	{* <section class="flex_container description_cover">
 		{if $issue->hasDescription()}
 			<div class="description">
 				<h3 class="description_label">{translate key="plugins.themes.classic.issueDescription"}</h3>
@@ -49,10 +49,10 @@
 					</div>
 				{/if}
 			</div>
-		{/if}
+		{/if} *}
 
 		{* Issue cover image *}
-		{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
+{* 		{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
 		<div class="issue-top-wrap">
 			{if $issueCover}
 				<div class="img-wrap issue_cover_block{if !$issue->hasDescription()} align-left{/if}">
@@ -61,9 +61,9 @@
 						     src="{$issueCover|escape}" {if $issue->getLocalizedCoverImageAltText() != ''}alt="{$issue->getLocalizedCoverImageAltText()|escape}"{else}alt=""{/if}>
 					</a>
 				</div>
-			{/if}
+			{/if} *}
 			{* Full-issue galleys *}
-			{if $issueGalleys}
+{* 			{if $issueGalleys}
 				<section class="galleys">
 					<h4 class="visually-hidden b-title">
 						{translate key="issue.tableOfContents"}
@@ -79,7 +79,7 @@
 			{/if}
 		</div>
 	</section>
-{/if}
+{/if} *}
 
 
 
@@ -97,15 +97,20 @@
 					</h4>
 				{/if}
 				<div class="section_content">
+					<div class="col-md-6">
+						<div class="article-block">
 					{foreach from=$section.articles item=article}
 						{include file="frontend/objects/article_summary.tpl" headingLevel="5"}
 					{/foreach}
+						</div>
+					</div>
 				</div>
 			{/if}
 		</section>
 	{/foreach}
 </section><!-- .sections -->
 
-<a class="read_more btn btn-secondary" href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
+{* <a class="read_more btn btn-secondary" href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
 	{translate key="journal.viewAllIssues"}
 </a>
+ *}

@@ -85,37 +85,9 @@
 					</div>
 				</div>
 			</div>
-			{* {include file="frontend/objects/issue_toc.tpl"} *}
-			<div class="row">
-				{* {foreach name=sections from=$publishedSubmissions item=section} *}
-					{foreach from=$section.articles item=article}
 
-						<div class="col-md-6">
-							<div class="article-block">
-								<div class="txt num">7-24</div>
-								<a href="" class="title-article">
-									{$publication->getLocalizedFullTitle(null, 'html')|strip_unsafe_html}</a>
-								{if $showAuthor || $submissionPages || ($submissionDatePublished && $showDatePublished)}
-									{if $showAuthor}
-										<div class="txt authors">{$publication->getAuthorString($authorUserGroups)|escape}</div>
-									{/if}
-								{/if}
-								<a href="#" class="btn btn-pdf">PDF</a>
-							</div>
-						</div>
+			{include file="frontend/objects/issue_toc.tpl"}
 
-					{/foreach}
-				{* {/foreach} *}
-
-				<div class="col-md-6">
-					<div class="article-block">
-						<div class="txt num">24-35</div>
-						<div class="title-article">The Role of the Pareto Principle in Quality Management within Industry 4.0: A Comprehensive Bibliometric Analysis</div>
-						<div class="txt authors">Aleksy Kwilinski, Maciej Kardas</div>
-						<a href="#" class="btn btn-pdf">PDF</a>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 

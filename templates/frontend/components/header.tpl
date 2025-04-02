@@ -55,8 +55,6 @@
 				</div>
 				<div class="col-6 col-md-6">
 					<div class="auth-wrap">
-						{* <a href="#" class="btn btn-reg">Register</a>
-						<a href="#" class="btn btn-login">Login</a> *}
 						<div class="user-nav-wrap">
 							{load_menu name="user" id="navigationUser" ulClass="pkp_navigation_user"}
 						</div>
@@ -85,7 +83,8 @@
 							<span>MENU</span>
 						</div>
 						<div class="search-wrap">
-							<input type="text" placeholder="Search">
+							{* <input type="text" placeholder="Search"> *}
+							{include file="frontend/components/searchForm_simple.tpl"}
 						</div>
 					</div>
 				</div>
