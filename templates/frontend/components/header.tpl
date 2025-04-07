@@ -50,7 +50,7 @@
 				<div class="col-6 col-md-6">
 					<div class="logo-wrap">
 						<a href="{$homeUrl}"><img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle|escape}"></a>
-						<div class="logo-text">Anti-Corruption Studies and Research</div>
+						<div class="logo-text">{$displayPageHeaderTitle|escape}</div>
 					</div>
 				</div>
 				<div class="col-6 col-md-6">

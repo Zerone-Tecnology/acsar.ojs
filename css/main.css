@@ -72,11 +72,14 @@ a:hover {
   flex-direction: row;
   align-items: center;
 }
+#header .logo-wrap a:focus, #header .logo-wrap a:focus-visible {
+  outline: none;
+}
 #header .logo-wrap img {
   margin-right: 15px;
   width: 120px;
 }
-#header .logo-wrap img:focus-visible {
+#header .logo-wrap img:focus, #header .logo-wrap img:focus-visible {
   outline: none;
 }
 #header .logo-wrap .logo-text {
@@ -109,11 +112,20 @@ a:hover {
   left: 0;
   padding-left: 15px;
 }
+#header .user-nav-wrap ul ul .task_count {
+  padding: 2px 7px;
+  color: #000;
+}
 #header .user-nav-wrap ul li {
   position: relative;
 }
 #header .user-nav-wrap ul li:hover ul {
   display: block;
+}
+#header .user-nav-wrap .task_count {
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 15em;
 }
 
 .mobile-menu {
@@ -375,9 +387,38 @@ a:hover {
   background-color: #0494FC;
   color: #fff;
 }
+.btn-up {
+  border: 1px solid #004156;
+  margin: 5px;
+  color: #004156;
+  padding: 5px;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+.btn-up::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  border: solid #004156;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(225deg);
+}
+.btn-up:hover {
+  background-color: #0494FC;
+  color: #fff;
+}
+.btn-up:hover::after {
+  border-color: #fff;
+}
 
 .articles {
   margin: 0 0 55px;
+  min-height: 150px;
 }
 .articles .title {
   font-family: "Libre Bodoni", "BodoniCyrillic", serif;
@@ -768,6 +809,14 @@ a:hover {
 }
 .footer .search-wrap {
   margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .search-wrap form {
+  width: 85%;
+}
+.footer .search-wrap form input {
+  height: 100%;
 }
 .footer .partners-wrap {
   display: flex;
@@ -800,10 +849,17 @@ a:hover {
 
 .user-nav-wrap ul ul {
   text-align: left;
+  background: #004156;
+  padding: 0 !important;
+  z-index: 20;
 }
 .user-nav-wrap ul ul li a {
   display: block;
-  padding: 5px 0;
+  padding: 10px 15px;
+  color: #fff;
+}
+.user-nav-wrap ul ul li a:hover {
+  color: #0494FC;
 }
 
 .page_login .cmp_form {

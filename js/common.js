@@ -8,5 +8,10 @@ jQuery(document).ready(function($){
 		$(this).find('#nav-icon').toggleClass('open');
 		$('.nav-wrap').toggleClass('open')
 	});
+
+	$("a[href='#up']").click(function() {
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		return false;
+	});
 	
 });

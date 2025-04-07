@@ -20,6 +20,9 @@
 {include file="frontend/components/header.tpl" pageTitle="common.search"}
 
 <main class="page page_search">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3 page-wrap issue-wrap">
 	<section class="container-fluid container-page">
 
 		{include file="frontend/components/headings.tpl" currentTitleKey="common.search"}
@@ -28,7 +31,7 @@
 		{assign var=formUrlParameters value=[]}{* Prevent Smarty warning *}
 		{$smarty.capture.searchFormUrl|parse_url:$smarty.const.PHP_URL_QUERY|parse_str:$formUrlParameters}
 		<div class="row">
-			<form class="cmp_form col-sm-10 offset-sm-1 col-md-8 offset-md-2" method="get" action="{$smarty.capture.searchFormUrl|strtok:"?"|escape}">
+			<form class="cmp_form" method="get" action="{$smarty.capture.searchFormUrl|strtok:"?"|escape}">
 				{foreach from=$formUrlParameters key=paramKey item=paramValue}
 					<input type="hidden" name="{$paramKey|escape}" value="{$paramValue|escape}"/>
 				{/foreach}
@@ -110,6 +113,9 @@
 		{/if}
 
 	</section>
+			</div>
+		</div>
+	</div>
 </main><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}

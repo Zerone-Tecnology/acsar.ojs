@@ -42,9 +42,9 @@
 
 				</div>
 				<div class="col-12 col-md-4">
-					<div class="cover-block-wrap">
-						{* Latest issue *}
-						{if $issue}
+					{* Latest issue *}
+					{if $issue}
+						<div class="cover-block-wrap">
 							<div class="txt current">{translate key="journal.currentIssue"}</div>
 							{* Issue cover image *}
 							{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
@@ -63,15 +63,15 @@
 							{if $issue->getDatePublished()}
 								<div class="txt pub-date"><b>{translate key="submissions.published"}:</b> {$issue->getDatePublished()|date_format:$dateFormatLong}</div>
 							{/if}
-						{/if}
-
-					</div>
+						</div>
+					{/if}
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div id="articles" class="articles">
+	{if $issue}
 		<div class="container">
 			<div class="row top">
 				<div class="col-md-9">
@@ -89,7 +89,9 @@
 			{include file="frontend/objects/issue_toc.tpl"}
 
 		</div>
+	{/if}
 	</div>
+
 
 
 <main class="page_index_journal">

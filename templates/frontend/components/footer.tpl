@@ -55,7 +55,7 @@
 					<div class="block">
 						<div class="logo-wrap">
 							<img src="{$baseUrl}/plugins/themes/classic/img/acsar-logo.png" alt="ACSAR">
-							<div class="logo-text">Anti-Corruption Studies and Research</div>
+							<div class="logo-text">{$displayPageHeaderTitle|escape}</div>
 						</div>
 					</div>
 				</div>
@@ -69,8 +69,7 @@
 				<div class="col-12 col-md-12 col-lg-4">
 					<div class="block">
 						<div class="search-wrap">
-							<input type="text" placeholder="Search">
-							<input type="button" value="Find">
+							{include file="frontend/components/searchForm_simple.tpl"}
 							<a href="#up" class="btn btn-up"></a>
 						</div>
 						<div class="partners-wrap">
@@ -86,10 +85,10 @@
 			</div>
 			<div class="row bottom">
 				<div class="col-md-6">
-					<div class="block left copy">© 2025 Anti-corruption studies and research</div>
+					<div class="block left copy">© 2025 {$displayPageHeaderTitle|escape}</div>
 				</div>
 				<div class="col-md-6">
-					<div class="block right zerone"><a href="#">Разработка сайта — Zerone Technology <img src="{$baseUrl}/plugins/themes/classic/img/zerone-logo.jpg" alt="Zerone"></a></div>
+					<div class="block right zerone"><a href="https://zeronetech.kz/services/razrabatyvaem/sayty-nauchnykh-zhurnalov/" target="_blank">Разработка сайта — Zerone Technology <img src="{$baseUrl}/plugins/themes/classic/img/zerone-logo.jpg" alt="Zerone"></a></div>
 				</div>
 			</div>
 		</div>
