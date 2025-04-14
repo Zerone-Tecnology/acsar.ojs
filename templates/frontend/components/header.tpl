@@ -49,7 +49,8 @@
 			<div class="row">
 				<div class="col-6 col-md-6">
 					<div class="logo-wrap">
-						<a href="{$homeUrl}"><img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle|escape}"></a>
+						<a href="{$homeUrl}"><img src="{$baseUrl}/plugins/themes/classic/img/acsar-logo.svg" alt="{$displayPageHeaderTitle|escape}"></a>
+						{* <a href="{$homeUrl}"><img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle|escape}"></a> *}
 						<div class="logo-text">{$displayPageHeaderTitle|escape}</div>
 					</div>
 				</div>
