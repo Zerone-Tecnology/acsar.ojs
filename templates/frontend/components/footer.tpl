@@ -54,7 +54,7 @@
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="block">
 						<div class="logo-wrap">
-							<img src="{$baseUrl}/plugins/themes/classic/img/acsar-logo.png" alt="ACSAR">
+							<img src="{$baseUrl}/plugins/themes/classic/img/acsar-logo.svg" alt="ACSAR">
 							<div class="logo-text">{$displayPageHeaderTitle|escape}</div>
 						</div>
 					</div>
