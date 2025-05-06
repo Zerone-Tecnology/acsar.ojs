@@ -268,7 +268,7 @@ a:hover {
 }
 #main .title {
   font-family: serif;
-  font-size: 80px;
+  font-size: 54px;
   font-family: "Libre Bodoni", "BodoniCyrillic", serif;
   color: #004156;
   line-height: 1.2em;
@@ -874,6 +874,23 @@ a:hover {
 }
 .page_login .cmp_form .fields .custom-control {
   padding: 0 0 15px;
+}
+.page_login .cmp_form fieldset {
+  border: none;
+}
+.page_login .cmp_form .visually-hidden {
+  font-family: "Libre Bodoni", "BodoniCyrillic", serif;
+  font-size: 24px;
+}
+.page_login .cmp_form .form-control {
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.page_login .cmp_form small {
+  display: block;
+  margin-top: 15px;
 }
 
 .page_register .consent .fields .custom-checkbox, .page_register .reviewer .fields .custom-checkbox {
