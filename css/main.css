@@ -260,6 +260,7 @@ a:hover {
 }
 #main .main-content .title {
   margin-bottom: auto;
+  font-size: 80px;
 }
 #main .issn {
   margin-bottom: 15px;
@@ -878,21 +879,26 @@ a:hover {
 .page_login .cmp_form fieldset {
   border: none;
 }
-.page_login .cmp_form .visually-hidden {
+.page_login .cmp_form .form-label {
   font-family: "Libre Bodoni", "BodoniCyrillic", serif;
   font-size: 24px;
+  color: #004156;
 }
-.page_login .cmp_form .form-control {
+.page_login .cmp_form .form-input {
   border: none;
   padding: 15px;
   border-radius: 5px;
   margin-top: 15px;
+  width: 90%;
 }
 .page_login .cmp_form small {
   display: block;
   margin-top: 15px;
 }
 
+.page_register fieldset {
+  border: none;
+}
 .page_register .consent .fields .custom-checkbox, .page_register .reviewer .fields .custom-checkbox {
   display: flex;
   align-items: flex-start;
@@ -900,6 +906,33 @@ a:hover {
 }
 .page_register .consent .fields .custom-checkbox .custom-control-input, .page_register .reviewer .fields .custom-checkbox .custom-control-input {
   margin: 5px 10px 0 0;
+}
+.page_register .form-row {
+  display: flex;
+}
+.page_register .form-row .form-group {
+  width: 50%;
+  padding: 15px 0;
+}
+.page_register .form-row .form-group small {
+  display: block;
+}
+.page_register .form-row .form-group .form-control {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 15px 0;
+  width: 90%;
+}
+.page_register .form-label {
+  font-family: "Libre Bodoni", "BodoniCyrillic", serif;
+  font-size: 24px;
+  color: #004156;
+}
+.page_register .register-form-legend {
+  font-family: "Libre Bodoni", "BodoniCyrillic", serif;
+  font-size: 30px;
+  color: #004156;
 }
 
 @media screen and (max-width: 1200px) {

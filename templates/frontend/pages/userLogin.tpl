@@ -42,19 +42,19 @@
 
 					<fieldset class="fields">
 						<div class="row">
-							<div class="form-group col-md-6 offset-md-3">
-								<label for="username" class="visually-hidden">
+							<div class="form-group col-md-6">
+								<label for="username" class="form-label">
 									{translate key="user.username"}
 								</label>
-								<input type="text" class="form-control" name="username" id="username" value="{$username|default:""|escape}" maxlength="32" placeholder="{translate key="user.username"}" required>
+								<input type="text" class="form-input form-control" name="username" id="username" value="{$username|default:""|escape}" maxlength="32" placeholder="{translate key="user.username"}" required>
 								<small class="form-text text-muted"><span class="required">*</span>{translate key="common.required"}</small>
 							</div>
 
-							<div class="form-group col-md-6 offset-md-3">
-								<label for="password" class="visually-hidden">
+							<div class="form-group col-md-6">
+								<label for="password" class="form-label">
 									{translate key="user.password"}
 								</label>
-								<input type="password" class="form-control" name="password" id="password" value="{$password|default:""|escape}" password="true" maxlength="32" placeholder="{translate key="user.password"}" required>
+								<input type="password" class="form-input form-control" name="password" id="password" value="{$password|default:""|escape}" password="true" maxlength="32" placeholder="{translate key="user.password"}" required>
 								<small class="form-text text-muted"><span class="required">*</span>{translate key="common.required"}</small>
 								<p>
 									<small>
@@ -65,14 +65,14 @@
 								</p>
 							</div>
 
-							<div class="col-md-6 offset-md-3 custom-control custom-checkbox checkbox-remember">
+							<div class="col-md-6 custom-control custom-checkbox checkbox-remember">
 								<input type="checkbox" class="custom-control-input" name="remember" id="remember" value="1" checked>
 								<label class="custom-control-label" for="remember">{translate key="user.login.rememberUsernameAndPassword"}</label>
 							</div>
 
 							{* recaptcha spam blocker *}
 							{if $recaptchaPublicKey}
-								<div class="col-md-6 offset-md-3">
+								<div class="col-md-6">
 									<fieldset class="recaptcha_wrapper">
 										<div class="fields">
 											<div class="recaptcha">
