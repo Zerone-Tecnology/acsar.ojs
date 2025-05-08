@@ -11,6 +11,11 @@
 {include file="frontend/components/header.tpl" pageTitle="user.login.resetPassword"}
 
 <main class="page page_lost_password">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3 page-wrap register-wrap">
+
 	<div class="container-fluid container-page">
 
 		{include file="frontend/components/headings.tpl" currentTitleKey="user.login.resetPassword"}
@@ -58,6 +63,11 @@
 
 		</form>
 
+	</div>
+
+
+				</div>
+		</div>
 	</div>
 </main><!-- .page -->
 
