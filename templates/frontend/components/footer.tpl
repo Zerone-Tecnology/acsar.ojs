@@ -76,6 +76,10 @@
 							<div class="block">
 								<a href="https://www.strikeplagiarism.com/en/" target="_block"><img src="{$baseUrl}/plugins/themes/classic/img/strikeplagiarism-logo.png" alt="strikeplagiarism"></a>
 							</div>
+
+							<div class="block">
+								<a href="https://www.linkedin.com/company/anti-corruption-studies-and-research/" target="_block">Linkedin</a>
+							</div>
 							<div class="block">
 								<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_block"><img src="{$baseUrl}/plugins/themes/classic/img/cc-logo.png" alt="CC"></a>
 							</div>
