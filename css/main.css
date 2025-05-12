@@ -97,10 +97,14 @@ a:hover {
 #header .auth-wrap .btn {
   border-color: #F4F4F7;
   font-size: 14px;
-  padding: 15px 25px;
+  padding: 0;
   display: inline-block;
   margin: 0 5px;
   color: #0D213A;
+}
+#header .auth-wrap .btn a {
+  padding: 15px 25px;
+  display: block;
 }
 #header .user-nav-wrap ul {
   list-style-type: none;
@@ -934,6 +938,10 @@ a:hover {
   font-family: "Libre Bodoni", "BodoniCyrillic", serif;
   font-size: 30px;
   color: #004156;
+}
+
+.language-toggle .dropdown-menu-right {
+  padding: 0;
 }
 
 @media screen and (max-width: 1200px) {
